@@ -4,7 +4,7 @@
 
 Todo el material es libre: puede usarlo, adaptarlo y compartirlo.
 
-[**Descargar el kit completo**](https://github.com/<ORGANIZACIÓN>/kit-steam/releases/latest) · [Abrir la Gema](<LIGA DE LA GEMA>)
+[**Descargar el kit completo**](https://github.com/eruelas-cetys/steam/releases/latest) · [Abrir la Gema](https://gemini.google.com/gem/1CU8PMaLrnnSPqOltSaSx2SMpcUF2O90s?usp=sharing)
 
 ---
 
