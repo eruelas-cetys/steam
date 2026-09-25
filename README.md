@@ -19,10 +19,11 @@ Un docente que sale de una capacitación STEAM suele quedarse con las ideas pero
 ### Soy docente y quiero diseñar mi proyecto
 
 1. Descargue la **plantilla de planeación** (`01-docentes/`).
-2. Abra la **Gema** y escriba «hola». Le hará preguntas de una en una durante unos veinte minutos.
-3. **Revise lo que le entregue** y corrija lo que no corresponda a su grupo. Este paso no es opcional: la Gema no conoce a sus alumnos.
-4. Copie el texto a la plantilla, sección por sección.
-5. Si algún alumno necesita apoyos, consulte el **anexo de ajustes razonables**.
+2. Si va a trabajarlo en una capacitación presencial, imprima el **cuadernillo de trabajo** —reúne en un solo PDF la plantilla, el anexo y las hojas para llenar a mano— y complete la primera parte antes de abrir la Gema.
+3. Abra la **Gema** y escriba «hola». Le hará preguntas de una en una durante unos veinte minutos.
+4. **Revise lo que le entregue** y corrija lo que no corresponda a su grupo. Este paso no es opcional: la Gema no conoce a sus alumnos.
+5. Copie el texto a la plantilla, sección por sección.
+6. Si algún alumno necesita apoyos, consulte el **anexo de ajustes razonables**.
 
 ### Soy formador y voy a capacitar docentes
 
@@ -42,7 +43,7 @@ Lea `02-gema/COMO-INSTALAR-LA-GEMA.md`.
 
 | Carpeta | Qué hay |
 |---|---|
-| `01-docentes/` | Plantilla de planeación · Anexo de ajustes razonables |
+| `01-docentes/` | Plantilla de planeación · Anexo de ajustes razonables · Hojas de trabajo para llenar a mano · Cuadernillo de trabajo (las tres anteriores, compiladas en un solo PDF para imprimir) |
 | `02-gema/` | Instrucciones de la Gema · Archivos de conocimiento · Guía de instalación |
 | `03-evaluacion/` | Rúbrica de valoración · Script del formulario de registro |
 | `04-capacitacion/` | Presentación para docentes · Presentación para evaluadores |
@@ -77,9 +78,9 @@ Puede compartirlo y adaptarlo, incluso con fines comerciales, siempre que dé cr
 | Rol | Persona |
 |---|---|
 | Diseño y desarrollo | **Dr. Emmanuelle Ruelas Gómez** |
-| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Alcantara · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández |
+| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M en C. Maritza Patricia López Solorio |
 | Revisión y validación | Dr. Juan Terrazas Gaynor |
-| Gestión y eventos | Ing. Daniel Millan Alcantara · Dra. Verónica Rojas Mendizábal |
+| Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 
 Contacto: `emmanuelle.ruelas@cetys.mx`

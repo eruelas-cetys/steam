@@ -52,9 +52,9 @@ También funciona sin instalar nada: pegar el mismo bloque de instrucciones como
 | Rol | Persona |
 |---|---|
 | Diseño y desarrollo | **Dr. Emmanuelle Ruelas Gómez** |
-| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Alcantara · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández |
+| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M en C. Maritza Patricia López Solorio |
 | Revisión y validación | Dr. Juan Terrazas Gaynor |
-| Gestión y eventos | Ing. Daniel Millan Alcantara · Dra. Verónica Rojas Mendizábal |
+| Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 
 Esta obra se distribuye bajo licencia **Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)** — https://creativecommons.org/licenses/by-sa/4.0/deed.es

@@ -11,7 +11,7 @@ authors:
   - family-names: "Ruelas Gómez"
     given-names: "Emmanuelle"
     name-suffix: "Dr."
-  - family-names: "Millan Alcantara"
+  - family-names: "Millan Coronado"
     given-names: "Daniel"
     name-suffix: "Ing."
   - family-names: "Angulo Camacho"
@@ -20,9 +20,20 @@ authors:
   - family-names: "Melero Hernández"
     given-names: "Miriam"
     name-suffix: "Mtra."
+  - family-names: "Becerra Rojas"
+    given-names: "Silvia Lizeth"
+    name-suffix: "Dra."
+  - family-names: "López Solorio"
+    given-names: "Maritza Patricia"
+    name-suffix: "M en C."
   - family-names: "Terrazas Gaynor"
     given-names: "Juan"
     name-suffix: "Dr."
+contact:
+  - family-names: "Ruelas Gómez"
+    given-names: "Emmanuelle"
+    name-suffix: "Dr."
+    email: "emmanuelle.ruelas@cetys.mx"
 keywords:
   - STEAM
   - Design Thinking

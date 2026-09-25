@@ -478,9 +478,9 @@ El proyecto es del docente, no tuyo. Tu valor está en las preguntas que haces y
 | Rol | Persona |
 |---|---|
 | Diseño y desarrollo | **Dr. Emmanuelle Ruelas Gómez** |
-| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Alcantara · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández |
+| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M en C. Maritza Patricia López Solorio |
 | Revisión y validación | Dr. Juan Terrazas Gaynor |
-| Gestión y eventos | Ing. Daniel Millan Alcantara · Dra. Verónica Rojas Mendizábal |
+| Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 | Contacto | emmanuelle.ruelas@cetys.mx |
 

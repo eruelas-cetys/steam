@@ -531,9 +531,9 @@ function sinBordes(t) {
  *  Kit STEAM — Versión 1.0 · Septiembre de 2026
  *
  *  Diseño y desarrollo:    Dr. Emmanuelle Ruelas Gómez
- *  Contenido pedagógico:   Dr. Emmanuelle Ruelas Gómez, Ing. Daniel Millan Alcantara, Mtra. Emarinia Angulo Camacho, Mtra. Miriam Melero Hernández
+ *  Contenido pedagógico:   Dr. Emmanuelle Ruelas Gómez, Ing. Daniel Millan Coronado, Mtra. Emarinia Angulo Camacho, Mtra. Miriam Melero Hernández, Dra. Silvia Lizeth Becerra Rojas, M en C. Maritza Patricia López Solorio
  *  Revisión y validación:  Dr. Juan Terrazas Gaynor
- *  Gestión y eventos:      Ing. Daniel Millan Alcantara, Dra. Verónica Rojas Mendizábal
+ *  Gestión y eventos:      Ing. Daniel Millan Coronado, Dra. Verónica Rojas Mendizábal
  *  Institución:            CETYS - Universidad
  *  Contacto:               emmanuelle.ruelas@cetys.mx
  *
