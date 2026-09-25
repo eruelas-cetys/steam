@@ -46,7 +46,7 @@ Lea `02-gema/COMO-INSTALAR-LA-GEMA.md`.
 | `01-docentes/` | Plantilla de planeación · Anexo de ajustes razonables · Hojas de trabajo para llenar a mano · Cuadernillo de trabajo (las tres anteriores, compiladas en un solo PDF para imprimir) |
 | `02-gema/` | Instrucciones de la Gema · Archivos de conocimiento · Guía de instalación |
 | `03-evaluacion/` | Rúbrica de valoración · Script del formulario de registro |
-| `04-capacitacion/` | Presentación para docentes · Presentación para evaluadores |
+| `04-capacitacion/` | Presentación para docentes · Presentación para evaluadores · Script del cuestionario de evaluación de la capacitación |
 | `05-opcional/` | Script que genera la planeación como documento de Google |
 
 ---
@@ -77,13 +77,13 @@ Puede compartirlo y adaptarlo, incluso con fines comerciales, siempre que dé cr
 
 | Rol | Persona |
 |---|---|
-| Diseño y desarrollo | Dr. Emmanuelle Ruelas Gómez |
-| Contenido pedagógico | Mtra. Emarinia Angulo Camacho \| Mtra. Miriam Melero Hernández \| Dra. Silvia Lizeth Becerra Rojas \| Ing. Daniel Millan Coronado \| M en C. Maritza Patricia López Solorio \| Dr. Emmanuelle Ruelas Gómez · |
+| Diseño y desarrollo | **Dr. Emmanuelle Ruelas Gómez** |
+| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M en C. Maritza Patricia López Solorio |
 | Revisión y validación | Dr. Juan Terrazas Gaynor |
 | Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 
-Contactos: `juan.terrazas@cetys.mx | emmanuelle.ruelas@cetys.mx`
+Contacto: `emmanuelle.ruelas@cetys.mx`
 
 ---
 
