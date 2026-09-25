@@ -77,13 +77,13 @@ Puede compartirlo y adaptarlo, incluso con fines comerciales, siempre que dé cr
 
 | Rol | Persona |
 |---|---|
-| Diseño y desarrollo | **Dr. Emmanuelle Ruelas Gómez** |
-| Contenido pedagógico | Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M en C. Maritza Patricia López Solorio |
+| Diseño y desarrollo | Dr. Emmanuelle Ruelas Gómez |
+| Contenido pedagógico | Mtra. Emarinia Angulo Camacho \| Mtra. Miriam Melero Hernández \| Dra. Silvia Lizeth Becerra Rojas \| Ing. Daniel Millan Coronado \| M en C. Maritza Patricia López Solorio \| Dr. Emmanuelle Ruelas Gómez · |
 | Revisión y validación | Dr. Juan Terrazas Gaynor |
 | Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 
-Contacto: `emmanuelle.ruelas@cetys.mx`
+Contactos: `juan.terrazas@cetys.mx | emmanuelle.ruelas@cetys.mx`
 
 ---
 
