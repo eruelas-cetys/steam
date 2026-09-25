@@ -45,8 +45,8 @@ Lea `02-gema/COMO-INSTALAR-LA-GEMA.md`.
 |---|---|
 | `01-docentes/` | Plantilla de planeación · Anexo de ajustes razonables · Hojas de trabajo para llenar a mano · Cuadernillo de trabajo (las tres anteriores, compiladas en un solo PDF para imprimir) |
 | `02-gema/` | Instrucciones de la Gema · Archivos de conocimiento · Guía de instalación |
-| `03-evaluacion/` | Rúbrica de valoración · Script del formulario de registro |
-| `04-capacitacion/` | Presentación para docentes · Presentación para evaluadores · Script del cuestionario de evaluación de la capacitación |
+| `03-evaluacion/` | Rúbrica de valoración (.docx y .pdf) · Script del formulario de registro |
+| `04-capacitacion/` | Presentación para docentes (.pptx y .pdf) · Presentación para evaluadores (.pptx y .pdf) · Script del cuestionario de evaluación de la capacitación |
 | `05-opcional/` | Script que genera la planeación como documento de Google |
 
 ---
