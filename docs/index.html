@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit STEAM · CETYS</title>
+<meta name="description" content="Kit completo para el diseño, la implementación y la valoración de proyectos STEAM de aula. Design Thinking en cinco fases, anclado en la Nueva Escuela Mexicana.">
+<style>
+  :root{
+    --black:#000000;
+    --grey:#75787B;
+    --yellow:#FFCD00;
+    --white:#FFFFFF;
+    --offwhite:#F6F6F4;
+    --line:#E4E4E1;
+    --ink:#1A1A1A;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.55;
+  }
+  h1,h2,h3{font-weight:800; letter-spacing:-0.01em;}
+  a{color:inherit;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px;}
+  section{padding:88px 0;}
+  .eyebrow{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--grey);
+    margin-bottom:14px;
+  }
+  .eyebrow.on-black{color:var(--yellow);}
+  h2{font-size:30px; margin:0 0 20px;}
+  h2 .accent{color:var(--yellow); -webkit-text-stroke:1px var(--black);}
+
+  /* ---- Nav ---- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1080px; margin:0 auto; padding:14px 28px;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+  }
+  .nav-inner img{height:30px; display:block;}
+  .nav-links{display:flex; gap:22px; font-size:14px; font-weight:600;}
+  .nav-links a{text-decoration:none; color:var(--ink); opacity:0.75;}
+  .nav-links a:hover{opacity:1;}
+  .btn{
+    display:inline-block;
+    padding:11px 22px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:14px;
+    text-decoration:none;
+    border:2px solid transparent;
+    transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-yellow{background:var(--yellow); color:var(--black);}
+  .btn-outline-black{border-color:var(--black); color:var(--black);}
+  .btn-outline-white{border-color:var(--white); color:var(--white);}
+  .btn-outline-yellow{border-color:var(--yellow); color:var(--yellow);}
+  .nav-cta{display:none;}
+  @media(min-width:720px){ .nav-cta{display:inline-block;} }
+
+  /* ---- Hero ---- */
+  .hero{
+    position:relative;
+    background:var(--black);
+    color:var(--white);
+    overflow:hidden;
+    padding:110px 0 96px;
+  }
+  .hero .circle{
+    position:absolute; border-radius:50%;
+  }
+  .hero .c1{width:420px; height:420px; background:var(--yellow); opacity:0.95; right:-140px; top:-160px;}
+  .hero .c2{width:200px; height:200px; border:2px solid var(--grey); right:60px; bottom:-90px;}
+  .hero .c3{width:90px; height:90px; background:var(--grey); left:-20px; bottom:40px; opacity:0.5;}
+  .hero-inner{position:relative; z-index:2;}
+  .hero h1{
+    font-size:48px; line-height:1.08; margin:0 0 18px; max-width:640px;
+  }
+  .hero p.lead{
+    font-size:18px; color:#D8D8D6; max-width:560px; margin:0 0 34px;
+  }
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:14px;}
+  @media(max-width:600px){ .hero h1{font-size:34px;} .hero .c1{width:280px;height:280px;right:-110px;top:-110px;} }
+
+  /* ---- Qué resuelve ---- */
+  .callout{
+    border-left:4px solid var(--yellow);
+    padding:4px 0 4px 22px;
+    font-size:19px;
+    color:#333;
+    max-width:760px;
+  }
+
+  /* ---- Fases ---- */
+  .fases-section{background:var(--offwhite); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .fases{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+    margin-top:36px;
+  }
+  @media(max-width:820px){ .fases{grid-template-columns:1fr 1fr;} }
+  @media(max-width:480px){ .fases{grid-template-columns:1fr;} }
+  .fase{background:var(--white); border:1px solid var(--line); border-radius:12px; padding:22px 18px;}
+  .fase .num{
+    width:38px; height:38px; border-radius:50%;
+    background:var(--black); color:var(--yellow);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800; font-size:15px; margin-bottom:14px;
+  }
+  .fase h3{font-size:16px; margin:0 0 8px;}
+  .fase p{font-size:14px; color:var(--grey); margin:0;}
+  .fase.destacada{border-color:var(--yellow); background:#FFFBEA;}
+  .fase.destacada .num{background:var(--yellow); color:var(--black);}
+
+  /* ---- Cards grid (roles / carpetas) ---- */
+  .grid-cards{display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:36px;}
+  @media(max-width:700px){ .grid-cards{grid-template-columns:1fr;} }
+  .grid-cards.five{grid-template-columns:repeat(3,1fr);}
+  @media(max-width:900px){ .grid-cards.five{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .grid-cards.five{grid-template-columns:1fr;} }
+  .card{
+    border:1px solid var(--line); border-radius:14px; padding:26px;
+    background:var(--white);
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  .card:hover{border-color:var(--yellow); transform:translateY(-2px);}
+  .card .tag{
+    display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--black); background:var(--yellow);
+    padding:3px 9px; border-radius:6px; margin-bottom:14px;
+  }
+  .card h3{font-size:17px; margin:0 0 8px;}
+  .card p{font-size:14px; color:#444; margin:0 0 14px;}
+  .card a.go{font-size:13px; font-weight:700; text-decoration:none; color:var(--black);}
+  .card a.go::after{content:" →"; color:var(--yellow); font-weight:900;}
+
+  /* ---- Recursos en vivo ---- */
+  .recursos{background:var(--black); color:var(--white);}
+  .recursos h2{color:var(--white);}
+  .recursos-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:32px;
+  }
+  @media(max-width:820px){ .recursos-grid{grid-template-columns:1fr 1fr;} }
+  @media(max-width:480px){ .recursos-grid{grid-template-columns:1fr;} }
+  .recurso-btn{
+    display:block; text-align:left; text-decoration:none;
+    border:1px solid #333; border-radius:12px; padding:20px;
+    color:var(--white); background:#0D0D0D;
+  }
+  .recurso-btn:hover{border-color:var(--yellow);}
+  .recurso-btn .lbl{font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--yellow); font-weight:700; display:block; margin-bottom:8px;}
+  .recurso-btn .name{font-size:15px; font-weight:700;}
+
+  /* ---- Tres ideas ---- */
+  .ideas{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:36px;}
+  @media(max-width:820px){ .ideas{grid-template-columns:1fr;} }
+  .idea{position:relative; padding-left:6px;}
+  .idea .q{font-size:44px; color:var(--yellow); font-weight:900; line-height:1; display:block; margin-bottom:4px;}
+  .idea p{font-size:15px; color:#333; margin:0;}
+  .idea strong{color:var(--black);}
+
+  /* ---- Créditos ---- */
+  .creditos-section{background:var(--offwhite); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  table.creditos{width:100%; border-collapse:collapse; margin-top:30px; font-size:14px;}
+  table.creditos th{
+    text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--grey); border-bottom:2px solid var(--black); padding:0 12px 10px 0;
+  }
+  table.creditos td{padding:12px 12px 12px 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  table.creditos tr:last-child td{border-bottom:none;}
+  .institucion-line{margin-top:24px; font-size:14px; color:var(--grey);}
+  .institucion-line strong{color:var(--ink);}
+
+  /* ---- Licencia ---- */
+  .licencia-box{
+    display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin-top:30px;
+  }
+  .badge-ccbysa{
+    flex:0 0 auto; border:2px solid var(--black); border-radius:10px;
+    padding:14px 18px; font-size:12px; font-weight:800; letter-spacing:0.04em;
+    text-align:center; color:var(--black);
+  }
+  .badge-ccbysa span{display:block; font-size:10px; font-weight:600; color:var(--grey); margin-top:4px;}
+  .cita-box{
+    flex:1; min-width:260px; background:var(--offwhite); border:1px solid var(--line);
+    border-left:4px solid var(--yellow); border-radius:8px; padding:18px 20px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; color:#333;
+  }
+
+  /* ---- Footer ---- */
+  footer{background:var(--black); color:#B9B9B7; padding:48px 0 36px;}
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
+  .footer-links{display:flex; gap:20px; font-size:13px; flex-wrap:wrap;}
+  .footer-links a{text-decoration:none; color:#D8D8D6;}
+  .footer-links a:hover{color:var(--yellow);}
+  .footer-qr{display:flex; align-items:center; gap:12px;}
+  .footer-qr img{width:56px; height:56px; border-radius:6px; background:#fff; padding:4px;}
+  .footer-qr span{font-size:12px; color:var(--grey); max-width:120px; line-height:1.3;}
+  .copyright{font-size:12px; color:var(--grey); margin-top:28px; border-top:1px solid #2A2A2A; padding-top:20px;}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <img src="assets/cetys-logotipo-negro.png" alt="CETYS Universidad">
+    <nav class="nav-links">
+      <a href="#empezar">Por dónde empezar</a>
+      <a href="#contenido">Contenido</a>
+      <a href="#recursos">Recursos</a>
+    </nav>
+    <a class="btn btn-outline-black nav-cta" href="https://github.com/eruelas-cetys/steam" target="_blank" rel="noopener">Ver en GitHub</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+  <div class="circle c3"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow on-black">CETYS Universidad</span>
+    <h1>Kit STEAM para el diseño de proyectos de aula</h1>
+    <p class="lead">Design Thinking en cinco fases, anclado en la Nueva Escuela Mexicana. Para docentes de preescolar, primaria, secundaria y preparatoria. Todo el material es libre: puede usarlo, adaptarlo y compartirlo.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-yellow" href="https://github.com/eruelas-cetys/steam/releases/latest" target="_blank" rel="noopener">Descargar el kit completo</a>
+      <a class="btn btn-outline-white" href="https://gemini.google.com/gem/1CU8PMaLrnnSPqOltSaSx2SMpcUF2O90s?usp=sharing" target="_blank" rel="noopener">Abrir la Gema</a>
+      <a class="btn btn-outline-yellow" href="https://github.com/eruelas-cetys/steam" target="_blank" rel="noopener">Ver en GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. QUÉ RESUELVE -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Qué resuelve</span>
+    <h2>De la capacitación al aula, sin quedarse a medio camino</h2>
+    <p class="callout">Un docente que sale de una capacitación STEAM suele quedarse con las ideas pero sin el andamiaje para llevarlas al aula. Este kit cubre ese tramo: un formato de planeación que ordena el proceso, un asistente conversacional que lo acompaña a llenarlo, un anexo de apoyos para alumnos que lo necesitan, y un instrumento para valorar si la capacitación efectivamente llegó a la práctica.</p>
+  </div>
+</section>
+
+<!-- 3. LAS CINCO FASES -->
+<section class="fases-section">
+  <div class="wrap">
+    <span class="eyebrow">El proceso</span>
+    <h2>Design Thinking en cinco fases</h2>
+    <div class="fases">
+      <div class="fase">
+        <div class="num">1</div>
+        <h3>Empatizar</h3>
+        <p>Identificar una necesidad real del entorno del alumno, no una impuesta desde el escritorio.</p>
+      </div>
+      <div class="fase">
+        <div class="num">2</div>
+        <h3>Definir</h3>
+        <p>Convertir esa necesidad en un reto de diseño claro y del tamaño de un proyecto de aula.</p>
+      </div>
+      <div class="fase">
+        <div class="num">3</div>
+        <h3>Idear</h3>
+        <p>Generar varias soluciones posibles antes de comprometerse con la primera que aparece.</p>
+      </div>
+      <div class="fase">
+        <div class="num">4</div>
+        <h3>Prototipar</h3>
+        <p>Construir una versión simple y económica de la mejor idea, con lo que ya hay a mano.</p>
+      </div>
+      <div class="fase destacada">
+        <div class="num">5</div>
+        <h3>Evaluar</h3>
+        <p>Probar el prototipo con quien lo va a usar y ajustar algo en consecuencia. Es la fase que más se olvida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. POR DÓNDE EMPEZAR -->
+<section id="empezar">
+  <div class="wrap">
+    <span class="eyebrow">Por dónde empezar</span>
+    <h2>Según quién sea usted</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <span class="tag">Docente</span>
+        <h3>Voy a diseñar mi proyecto</h3>
+        <p>Descargue la plantilla de planeación, abra la Gema y déjese guiar unos veinte minutos. Revise y corrija siempre lo que le entregue.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/01-docentes" target="_blank" rel="noopener">Ir a 01-docentes</a>
+      </div>
+      <div class="card">
+        <span class="tag">Formador</span>
+        <h3>Voy a capacitar docentes</h3>
+        <p>Use la presentación con notas del orador y el guion de ejemplo del huerto escolar para mostrar la Gema en vivo.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/04-capacitacion" target="_blank" rel="noopener">Ir a 04-capacitacion</a>
+      </div>
+      <div class="card">
+        <span class="tag">Evaluador</span>
+        <h3>Voy a evaluar proyectos</h3>
+        <p>Use la rúbrica de 12 criterios. Valora si el contenido de la capacitación aparece en el proyecto; no califica al docente.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/03-evaluacion" target="_blank" rel="noopener">Ir a 03-evaluacion</a>
+      </div>
+      <div class="card">
+        <span class="tag">Coordinador</span>
+        <h3>Voy a instalar todo</h3>
+        <p>Configure la Gema con sus instrucciones y archivos de conocimiento antes de compartirla con los docentes.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/02-gema" target="_blank" rel="noopener">Ir a 02-gema</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. QUÉ INCLUYE EL KIT -->
+<section id="contenido" class="fases-section">
+  <div class="wrap">
+    <span class="eyebrow">Contenido</span>
+    <h2>Qué incluye el kit</h2>
+    <div class="grid-cards five">
+      <div class="card">
+        <span class="tag">01</span>
+        <h3>Docentes</h3>
+        <p>Plantilla de planeación, anexo de ajustes razonables, hojas de trabajo y el cuadernillo que las compila en un solo PDF para imprimir.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/01-docentes" target="_blank" rel="noopener">Ver carpeta</a>
+      </div>
+      <div class="card">
+        <span class="tag">02</span>
+        <h3>Gema</h3>
+        <p>Instrucciones del asistente conversacional, sus archivos de conocimiento y la guía para instalarlo.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/02-gema" target="_blank" rel="noopener">Ver carpeta</a>
+      </div>
+      <div class="card">
+        <span class="tag">03</span>
+        <h3>Evaluación</h3>
+        <p>Rúbrica de valoración en Word y PDF, más el script que genera su formulario de registro en Google Forms.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/03-evaluacion" target="_blank" rel="noopener">Ver carpeta</a>
+      </div>
+      <div class="card">
+        <span class="tag">04</span>
+        <h3>Capacitación</h3>
+        <p>Presentaciones para docentes y evaluadores, guion de demostración y el cuestionario de evaluación de la capacitación.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/04-capacitacion" target="_blank" rel="noopener">Ver carpeta</a>
+      </div>
+      <div class="card">
+        <span class="tag">05</span>
+        <h3>Opcional</h3>
+        <p>Script que genera la planeación directamente como documento de Google, para quien prefiere ese flujo.</p>
+        <a class="go" href="https://github.com/eruelas-cetys/steam/tree/main/05-opcional" target="_blank" rel="noopener">Ver carpeta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. RECURSOS EN VIVO -->
+<section id="recursos" class="recursos">
+  <div class="wrap">
+    <span class="eyebrow on-black">Recursos en vivo</span>
+    <h2>Todo lo que se usa en el momento</h2>
+    <div class="recursos-grid">
+      <a class="recurso-btn" href="https://gemini.google.com/gem/1CU8PMaLrnnSPqOltSaSx2SMpcUF2O90s?usp=sharing" target="_blank" rel="noopener">
+        <span class="lbl">Asistente</span>
+        <span class="name">Abrir la Gema</span>
+      </a>
+      <a class="recurso-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeBpT1_KdAah0Wa35WcBv2gscRtcO41Vxu0KSvgbutrTcHspw/viewform" target="_blank" rel="noopener">
+        <span class="lbl">Formulario</span>
+        <span class="name">Cuestionario de evaluación</span>
+      </a>
+      <a class="recurso-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeCytcj24HPUlsNartHKzY84aU4B8jr36hXEk-FzbSuSA4kmQ/viewform" target="_blank" rel="noopener">
+        <span class="lbl">Formulario</span>
+        <span class="name">Rúbrica de valoración</span>
+      </a>
+      <a class="recurso-btn" href="https://github.com/eruelas-cetys/steam/releases/latest" target="_blank" rel="noopener">
+        <span class="lbl">Descarga</span>
+        <span class="name">Kit completo (.zip)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TRES IDEAS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Tres ideas que atraviesan el kit</span>
+    <h2>Lo que vale la pena recordar</h2>
+    <div class="ideas">
+      <div class="idea">
+        <span class="q">”</span>
+        <p><strong>La fase que más se olvida es la quinta.</strong> Probar el prototipo con quien lo va a usar y cambiar algo en consecuencia. Sin ajuste no hubo evaluación: hubo exhibición.</p>
+      </div>
+      <div class="idea">
+        <span class="q">”</span>
+        <p><strong>El asistente redacta; el docente decide.</strong> El conocimiento del grupo —quién necesita apoyo, qué materiales hay, cuánto dura de verdad una sesión— es lo que ninguna herramienta tiene.</p>
+      </div>
+      <div class="idea">
+        <span class="q">”</span>
+        <p><strong>Los apoyos se deciden por lo que se observa, no por diagnóstico.</strong> El anexo se organiza por conductas observables y no nombra condiciones clínicas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CRÉDITOS E INSTITUCIÓN -->
+<section class="creditos-section">
+  <div class="wrap">
+    <span class="eyebrow">Créditos</span>
+    <h2>Quién hizo este kit</h2>
+    <table class="creditos">
+      <tr><th>Rol</th><th>Persona</th></tr>
+      <tr><td>Diseño y desarrollo</td><td><strong>Dr. Emmanuelle Ruelas Gómez</strong></td></tr>
+      <tr><td>Contenido pedagógico</td><td>Dr. Emmanuelle Ruelas Gómez · Ing. Daniel Millan Coronado · Mtra. Emarinia Angulo Camacho · Mtra. Miriam Melero Hernández · Dra. Silvia Lizeth Becerra Rojas · M. en C. Maritza Patricia López Solorio</td></tr>
+      <tr><td>Revisión y validación</td><td>Dr. Juan Terrazas Gaynor</td></tr>
+      <tr><td>Gestión y eventos</td><td>Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal</td></tr>
+    </table>
+    <p class="institucion-line"><strong>CETYS – Universidad</strong> · Contacto: emmanuelle.ruelas@cetys.mx</p>
+  </div>
+</section>
+
+<!-- 9. LICENCIA Y CÓMO CITAR -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Licencia</span>
+    <h2>Puede usarlo, adaptarlo y compartirlo</h2>
+    <p style="max-width:680px; color:#333; font-size:15px;">Distribuido bajo <strong>Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</strong>: puede compartir y adaptar el material, incluso con fines comerciales, siempre que dé crédito, indique si hizo cambios y distribuya las obras derivadas bajo esta misma licencia.</p>
+    <div class="licencia-box">
+      <div class="badge-ccbysa">CC BY-SA 4.0<span>creativecommons.org</span></div>
+      <div class="cita-box">Ruelas Gómez, E. (2026). <em>Kit STEAM para el diseño de proyectos de aula.</em> Versión 1.1. Publicado bajo licencia CC BY-SA 4.0. https://github.com/eruelas-cetys/steam</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <img src="assets/cetys-logotipo-blanco.png" alt="CETYS Universidad" style="height:26px;">
+      <div class="footer-links">
+        <a href="https://github.com/eruelas-cetys/steam/issues" target="_blank" rel="noopener">Contribuir / Issues</a>
+        <a href="https://github.com/eruelas-cetys/steam/blob/main/LICENSE" target="_blank" rel="noopener">LICENSE</a>
+        <a href="https://github.com/eruelas-cetys/steam/blob/main/CITATION.cff" target="_blank" rel="noopener">CITATION.cff</a>
+        <a href="https://github.com/eruelas-cetys/steam" target="_blank" rel="noopener">Repositorio</a>
+      </div>
+      <div class="footer-qr">
+        <img src="assets/qr-github.png" alt="Código QR al repositorio en GitHub">
+        <span>Escanee para abrir el repositorio</span>
+      </div>
+    </div>
+    <p class="copyright">© 2026 CETYS Universidad · Kit STEAM distribuido bajo CC BY-SA 4.0</p>
+  </div>
+</footer>
+
+</body>
+</html>
