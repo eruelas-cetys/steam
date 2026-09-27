@@ -15,12 +15,19 @@ Cada vez que edite `docs/index.html` y suba el cambio a `main`, el sitio se actu
 
 ```
 docs/
-├── index.html          ← todo el sitio: una sola página
+├── index.html           ← página principal: las diez secciones
+├── docente.html         ← subpágina "Según quién sea usted" → Docente
+├── formador.html        ← subpágina "Según quién sea usted" → Formador
+├── evaluador.html       ← subpágina "Según quién sea usted" → Evaluador
+├── coordinador.html     ← subpágina "Según quién sea usted" → Coordinador
 └── assets/
-    ├── cetys-logotipo-negro.png     (nav y secciones claras)
-    ├── cetys-logotipo-blanco.png    (pie de página, fondo negro)
-    └── qr-github.png                (QR al repositorio, en el pie)
+    ├── styles.css                    (hoja de estilos compartida por las 5 páginas)
+    ├── cetys-logotipo-negro.png      (nav y secciones claras)
+    ├── cetys-logotipo-blanco.png     (pie de página, fondo negro)
+    └── qr-github.png                 (QR al repositorio, en el pie)
 ```
+
+Las cuatro subpáginas explican, con más detalle que la tarjeta de inicio, el proceso y los documentos específicos de cada rol, con enlaces directos a cada archivo del repositorio (vista previa para PDF, descarga directa para Word/PowerPoint, vista de código para los `.gs`/`.md`). Todas comparten `assets/styles.css`, así que un cambio de color o tipografía ahí se refleja en las cinco páginas.
 
 ## Para cuando se agreguen fotos y videos
 

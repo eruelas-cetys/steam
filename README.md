@@ -27,11 +27,11 @@ Un docente que sale de una capacitación STEAM suele quedarse con las ideas pero
 
 ### Soy formador y voy a capacitar docentes
 
-Use la presentación `Capacitacion-Gema-STEAM.pptx` (`04-capacitacion/`). Trae notas del orador con guion y tiempos. Son unos 45 minutos más el ejercicio práctico.
+Use la presentación `Capacitacion-Gema-STEAM.pptx` (`04-capacitacion/`). Trae notas del orador con guion y tiempos. Son unos 45 minutos más el ejercicio práctico. Para mostrar la Gema en vivo, `Guion-Demo-Huerto-Escolar-STEAM.pdf` trae las respuestas modelo de un docente, pregunta por pregunta, con el proyecto del huerto escolar. Al cierre, aplique el cuestionario de evaluación de la capacitación — enlace en el [README de esa carpeta](04-capacitacion/README.md).
 
 ### Voy a evaluar proyectos
 
-Use la **rúbrica** (`03-evaluacion/`) y su presentación de capacitación. La rúbrica valora si el contenido de la capacitación aparece en el proyecto; **no califica al docente**.
+Use la **rúbrica** (`03-evaluacion/`) y su presentación de capacitación. La rúbrica valora si el contenido de la capacitación aparece en el proyecto; **no califica al docente**. El formulario en línea para registrar cada valoración está en el [README de esa carpeta](03-evaluacion/README.md).
 
 ### Soy coordinador y voy a instalar todo
 
@@ -46,7 +46,7 @@ Lea `02-gema/COMO-INSTALAR-LA-GEMA.md`.
 | `01-docentes/` | Plantilla de planeación · Anexo de ajustes razonables · Hojas de trabajo para llenar a mano · Cuadernillo de trabajo (las tres anteriores, compiladas en un solo PDF para imprimir) |
 | `02-gema/` | Instrucciones de la Gema · Archivos de conocimiento · Guía de instalación |
 | `03-evaluacion/` | Rúbrica de valoración (.docx y .pdf) · Script del formulario de registro |
-| `04-capacitacion/` | Presentación para docentes (.pptx y .pdf) · Presentación para evaluadores (.pptx y .pdf) · Script del cuestionario de evaluación de la capacitación |
+| `04-capacitacion/` | Presentación para docentes (.pptx y .pdf) · Presentación para evaluadores (.pptx y .pdf) · Guion de ejemplo para demostrar la Gema en vivo · Script del cuestionario de evaluación de la capacitación |
 | `05-opcional/` | Script que genera la planeación como documento de Google |
 
 ---
@@ -83,7 +83,7 @@ Puede compartirlo y adaptarlo, incluso con fines comerciales, siempre que dé cr
 | Gestión y eventos | Ing. Daniel Millan Coronado · Dra. Verónica Rojas Mendizábal |
 | Institución | CETYS - Universidad |
 
-Contacto: `emmanuelle.ruelas@cetys.mx`
+Contacto: `emmanuelle.ruelas@cetys.mx` · `juan.terrazas@cetys.mx`
 
 ---
 
